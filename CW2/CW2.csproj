@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77D78273-FBFC-416C-B1D1-CEB7BFA0B8C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CW2</RootNamespace>
+    <AssemblyName>CW2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContactDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="datasets folder\ContactDataSet.cs">
+      <DependentUpon>ContactDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="datasets folder\ContactDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="datasets folder\EventDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EventviewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventviewerForm.Designer.cs">
+      <DependentUpon>EventviewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense.Designer.cs">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datasets folder\expenseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>expenseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="datasets folder\expenseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>expenseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="expenseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>expenseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income.Designer.cs">
+      <DependentUpon>Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactviewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactviewerForm.Designer.cs">
+      <DependentUpon>ContactviewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datasets folder\IncomeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncomeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="datasets folder\IncomeDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncomeDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IntroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroForm.Designer.cs">
+      <DependentUpon>IntroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportviewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportviewerForm.Designer.cs">
+      <DependentUpon>ReportviewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportviewerForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportviewerForm2.Designer.cs">
+      <DependentUpon>ReportviewerForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransActionviewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransActionviewerForm.Designer.cs">
+      <DependentUpon>TransActionviewerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EventviewerForm.resx">
+      <DependentUpon>EventviewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense.resx">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income.resx">
+      <DependentUpon>Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactviewerForm.resx">
+      <DependentUpon>ContactviewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroForm.resx">
+      <DependentUpon>IntroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportviewerForm.resx">
+      <DependentUpon>ReportviewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportviewerForm2.resx">
+      <DependentUpon>ReportviewerForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransActionviewerForm.resx">
+      <DependentUpon>TransActionviewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ContactDataSet.xsc">
+      <DependentUpon>ContactDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ContactDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContactDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ContactDataSet.xss">
+      <DependentUpon>ContactDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\ContactDataSet.xsc">
+      <DependentUpon>ContactDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\ContactDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContactDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets folder\ContactDataSet.xss">
+      <DependentUpon>ContactDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\EventDataSet3.xsc">
+      <DependentUpon>EventDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\EventDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets folder\EventDataSet3.xss">
+      <DependentUpon>EventDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\expenseDataSet.xsc">
+      <DependentUpon>expenseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\expenseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>expenseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets folder\expenseDataSet.xss">
+      <DependentUpon>expenseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\expenseDataSet4.xsc">
+      <DependentUpon>expenseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\expenseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>expenseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets folder\expenseDataSet4.xss">
+      <DependentUpon>expenseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\IncomeDataSet1.xsc">
+      <DependentUpon>IncomeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\IncomeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IncomeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets folder\IncomeDataSet1.xss">
+      <DependentUpon>IncomeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\IncomeDataSet11.xsc">
+      <DependentUpon>IncomeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="datasets folder\IncomeDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IncomeDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datasets folder\IncomeDataSet11.xss">
+      <DependentUpon>IncomeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="expenseDataSet.xsc">
+      <DependentUpon>expenseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="expenseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>expenseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="expenseDataSet.xss">
+      <DependentUpon>expenseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

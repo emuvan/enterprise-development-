@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Table]
+(
+	[Id] INT NULL PRIMARY KEY, 
+    [amount] INT NULL, 
+    [type] NCHAR(20) NULL
+)
